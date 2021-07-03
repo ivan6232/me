@@ -5,7 +5,7 @@
 TODO:互助未完成
 """
 
-cookies = ''
+cookies = 'pt_key=app_openAAJgtE5bADA4fFUDzayzsyUO3d9YuJW_G74q5ifQPnkbii4JC52ipLu0vhvvjEsdbuUUo4Zx7Tg;pt_pin=15602231009_p;'
 
 # 建议调整一下的参数
 # UA 可自定义你的，注意格式
