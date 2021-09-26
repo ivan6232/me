@@ -8,7 +8,7 @@ https://h5.ele.me
 
 Qx
 
-^https://h5.ele.me/restapi/biz.svip_bonus/v1/users/supervip/pea/queryAccountBalance url script-request-header elem_cookie.js
+^https://h5.ele.me/restapi/biz.svip_bonus/v1/users/supervip/pea/queryAccountBalance url script-request-header https://raw.githubusercontent.com/ivan6232/me/main/elem_cookie.js
 
 */
 
