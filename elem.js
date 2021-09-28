@@ -42,8 +42,8 @@ let elemhd = $.getdata('elemhd')
         console.log(`------------- 共${elemhdArr.length}个账号-------------\n`)
         
         //const elemhd = JSON.stringify($request.headers)
-        $.msg(elemhd)
-        $.msg($.name, "", `elem${status}饿了么cookie获取成功了abcd`)
+        //$.msg(elemhd)
+        //$.msg($.name, "", `elem${status}饿了么cookie获取成功了abcd`)
         
         for (let i = 0; i < elemhdArr.length; i++) {
             if (elemhdArr[i]) {
@@ -51,7 +51,7 @@ let elemhd = $.getdata('elemhd')
                 //elemurl = elemurlArr[i];
                 elemhd = elemhdArr[i];
                 $.index = i + 1;
-                console.log(`\n开始【饿了么${$.index}】`)
+                console.log(`\n开始【饿了么账号${$.index}】的任务`)
                 //await $.wait(10000);
                 await elembalance();
             }
