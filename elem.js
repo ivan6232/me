@@ -31,7 +31,7 @@ let elemhd = $.getdata('elemhd')
         await elemck()
 
     } else {
-        await elemck()
+        //await elemck()
         elemurlArr.push($.getdata('elemurl'))
         elemhdArr.push($.getdata('elemhd'))
         let elemcount = ($.getval('elemcount') || '1');
