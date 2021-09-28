@@ -74,7 +74,7 @@ function elembalance(timeout = 0) {
         //uid = elemurl.match(/user_id=(.*?)&/)[1]
         let url = {
             url: `https://h5.ele.me/restapi/biz.svip_bonus/v1/users/supervip/pea/queryAccountBalance?types=[%22PEA_ACCOUNT%22]`,
-            headers: elemhd,
+            headers: JSON.parse(elemhd),
         }
         $.get(url, async (err, resp, data) => {
             try {
