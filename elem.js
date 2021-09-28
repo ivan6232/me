@@ -56,7 +56,7 @@ let elemhd = $.getdata('elemhd')
     .finally(() => $.done())
 
 function elemck() {
-    if ($request.url.indexOf("MorningTree/gainEnergy?") > -1) {
+    if ($request.url.indexOf("pea/queryAccountBalance?") > -1) {
         const elemurl = $request.url
         if (elemurl) $.setdata(elemurl, `elemurl${status}`)
         $.log(elemurl)
