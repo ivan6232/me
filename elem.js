@@ -55,6 +55,7 @@ const url32 = 'https://h5.ele.me/restapi/biz.svip_scene/svip/engine/xSupply?para
         elemhdArr.push($.getdata('elemhd'))
         elemhd = elemhdArr[0];
         cookieVal = JSON.parse(elemhd)
+        console.log(cookieVal);
 
 
 
