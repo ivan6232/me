@@ -145,8 +145,8 @@ function elemck() {
         const elemhd = JSON.stringify($request.headers)
         if (elemhd) $.setdata(elemhd, `elemhd${status}`)
         $.log(elemhd)
-        $.msg(elemhd)
-        $.msg($.name, "", `elem${status}饿了么cookie获取成功了abcd`)
+        //$.msg(elemhd)
+        $.msg(`🎉Congratulations🎉成功获取饿了么cookie🎉`)
     }
 }
 
