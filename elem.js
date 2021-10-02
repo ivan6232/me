@@ -52,9 +52,10 @@ const url32 = 'https://h5.ele.me/restapi/biz.svip_scene/svip/engine/xSupply?para
     } else {
 
 
-        elemhdArr.push($.getdata('elemhd'))
+        elemhdArr.push($.getdata('elemhd'));
         elemhd = elemhdArr[0];
-        cookieVal = JSON.parse(elemhd)
+        cookie = JSON.parse(elemhd);
+        cookieVal = cookie.Cookie
         console.log(cookieVal);
 
 
@@ -67,7 +68,7 @@ const url32 = 'https://h5.ele.me/restapi/biz.svip_scene/svip/engine/xSupply?para
     await elem_mission_3()  //逛88会员活动领专享券
     await elem_mission_4()  //看看干饭神卡专区
     await elem_mission_5()  //看看最优惠的水果爆款清单
-    await elem_mission_6()  //???
+    await elem_mission_6()  //17会员日
     await elem_mission_7()  //去玩果园领水滴
     await elem_mission_8()  //试试0元抽手机
     await elem_mission_9()  //逛逛饿了么钱包
@@ -80,7 +81,7 @@ const url32 = 'https://h5.ele.me/restapi/biz.svip_scene/svip/engine/xSupply?para
     let waitDuration = 16;
 
     console.log(`任务:<开学季>美味全攻略正在执行,等待${waitDuration}秒` + `\n`);
-    await elem_mission_21()  //
+    await elem_mission_21(16000)  //
     await $.wait(waitDuration * 1000)//1000=1秒
 
     /*
@@ -330,9 +331,9 @@ function elem_mission_6(timeout = 0) {
             try {
                 data = JSON.parse(data);
                 if (data.data[0].attribute.msgCode == "4000") {
-                    console.log('任务-(???)：' + data.data[0].attribute.message + `\n`)
+                    console.log('任务-(17会员日)：' + data.data[0].attribute.message + `\n`)
                 } else {
-                    console.log('任务-(???)' + data.data[0].attribute.message + '：获得「' + data.data[0].attribute.value + '」吃货豆' + `\n`)
+                    console.log('任务-(17会员日)' + data.data[0].attribute.message + '：获得「' + data.data[0].attribute.value + '」吃货豆' + `\n`)
                 }
             } catch (e) {
                 //$.logErr(e, resp);
