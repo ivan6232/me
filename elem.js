@@ -1,8 +1,13 @@
 /*
 获取Cookie路径：饿了么App-我的-互动玩乐-赚吃货豆
-[MiTM]：https://h5.ele.me
-Quantumult X [rewrite_local]：^https://h5.ele.me/restapi/biz.svip_bonus/v1/users/supervip/pea/queryAccountBalance url script-request-header https://raw.githubusercontent.com/ivan6232/me/main/elem.js
 
+Quantumult X 
+[MiTM]：
+https://h5.ele.me
+[rewrite_local]：
+^https://h5.ele.me/restapi/biz.svip_bonus/v1/users/supervip/pea/queryAccountBalance url script-request-header https://raw.githubusercontent.com/ivan6232/me/main/elem.js
+[task_local]
+3 0 * * * https://raw.githubusercontent.com/ivan6232/me/main/elem.js, tag=饿了么吃货豆任务, img-url=https://gitee.com/liyirong/self/raw/master/elem.png
 */
 
 const $ = new Env('饿了么');
