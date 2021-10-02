@@ -51,7 +51,7 @@ const url32 = 'https://h5.ele.me/restapi/biz.svip_scene/svip/engine/xSupply?para
         elemhd = elemhdArr[0];
         elemheaders = JSON.parse(elemhd);
         cookieVal = elemheaders.Cookie
-        console.log(cookieVal);
+        //console.log(cookieVal);
 
 
 
@@ -69,6 +69,7 @@ const url32 = 'https://h5.ele.me/restapi/biz.svip_scene/svip/engine/xSupply?para
     await elem_mission_9()  //逛逛饿了么钱包
     await elem_mission_10()  //逛一逛高德十一活动
     await elem_mission_11()  //看看时下最热好货
+    console.log(`------现在结束SIMPLE_SIGNIN任务------\n`);
 
     /*
 
