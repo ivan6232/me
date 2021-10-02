@@ -51,7 +51,7 @@ const url32 = 'https://h5.ele.me/restapi/biz.svip_scene/svip/engine/xSupply?para
         elemhd = elemhdArr[0];
         elemheaders = JSON.parse(elemhd);
         cookieVal = elemheaders.Cookie
-        //console.log(cookieVal);
+        
 
 
 
