@@ -8,16 +8,12 @@ Quantumult X [rewrite_local]：^https://h5.ele.me/restapi/biz.svip_bonus/v1/user
 const $ = new Env('饿了么');
 
 let status;
-status = (status = ($.getval("elemstatus") || "1")) > 1 ? `${status}` : ""; // 账号扩展字符
+status = (status = ($.getval("elemstatus") || "1")) > 1 ? `${status}` : ""; 
 const elemhdArr = []
 let elemhd = $.getdata('elemhd')
 
-//lyr
-//const cookieVal = 'UTUSER=6171161930; DNT=0; _tb_token_=e68337edf7111; cookie2=1cdf96c87d861c88ad1166bdf4449db7; csg=5e10a333; munb=2206276323483; sgcookie=W100ghvwzRFAXlVlnts1j6MM1naLeVBq6OgWnXTlooZTxtx84I5Bmp90whnljTHMoGjB%2F2f3aMSQkiEVaifs6OEgdvwmrUOqm6XVFr6BB1MQ780%3D; t=eef4b5ed1e942fbf7ee816cf51cde45a; unb=2206276323483; isg=BPv7jhvHHlfb1x4a_2nAMQPugNtlUA9Sl65YLe241_oRTBsudSCfohmOYmoC92dK; l=eBP0FVggO-0mu33yBOfahurza77OSCdYYuPzaNbMiOCPO3CB5sZdW6e7rB86C31Rhs6JR3-mfMFpBeYBm3xonxv90AaKq0Dmn; tfstk=cbAOB34lMJFVGr0CqdHnlwG3CAilwZ3RmXSUM2LtPSB9zw10y3x8VOqFJwBoJ; xlly_s=1; SID=JgAAAAFv1HVK7QEK3gDo4-AwHm2Zifnz-y9VBGZBtBSnpioIeC_neQq_; USERID=6171161930; t_eleuc4=id4=0%40BA%2FvuHCrrRtXwjEHsSjRyRzudYkHpzkUyyAxJg%3D%3D; track_id=1571562123|31e28adff74c6155fd455255470b4eac2a366b292885829b2f|a2472f95eb827e1b9d12cf575e5ff897; _m_h5_tk=55b81a8a5c2790f2d0a910335716f0c4_1632942934008; _m_h5_tk_enc=023fa0b6d4330537f6f5c509d92068d4; ut_ubt_ssid=telekxb2s93y1v0hyok0sz8arb7uflqo_2019-10-20; x5check_ele=JYRXb4k3w83s4x4cnSVFFIuDmOq0bWh2vE2kG2t8prM%3D; tzyy=7e900cb02fcbe9cf83b8fc136646b703; cna=gRAzFv93ew8CAaOOtX5zbEUb; ubt_ssid=pt3x0wiovrn40igankw8t6m982y4654g_2019-10-20; perf_ssid=m8ap8jweyv5xfq8ohr6ti5nqw5tmfxcf_2019-10-20';
-//wzq
-//const cookieVal = 'UTUSER=2004498817; _orbit_h5_utils_channel_=ios.default.default.1633015112971; DNT=0; SID=LAAAAAB3ejmB7QEGZQDtr2aTyZSz44xS8zIE81NS4t-_6dKGk_0tk8B0; USERID=2004498817; _tb_token_=7b51f85b45b0d; cookie2=1b04a9f53d947c09817f23da4f2c75b6; csg=181a2ffe; munb=2205194305468; sgcookie=W10070WZ4rryvHPw2NP4TsqQDi64luO044WE4vHv7j%2FbaKb2RFwTsZJy5dGB1LOkLY%2FYDO0Ivvg%2FJnN5X30zjVxvrJFzRNPXigV9KXPOjyfPX%2BE%3D; t=3e3926b2ec1e02001220cda07353ef0e; unb=2205194305468; x5check_ele=ReffZj%2BaLJ%2BiWW9012c96t4DIkTTM4hjtuH6cJ8Lwug%3D; ut_ubt_ssid=s0wtjwrus5paeeyzqvzycbmpzuw1qzed_2021-09-21; l=eB_l019Pjq1u9MOoBOfahurza77OSCdYYuPzaNbMiOCPO0fB5EoRW6FsrDL6C31Rh6b2R37sEGxHBeYBcQAonxv9PIO_blkmn; tfstk=cknAB363XLBvfIp7tqLkCszptXOhwzYYNtNVXLn0aL-SV81mhWVekdLbH8UHe; cna=luaBGVrFUV8CAd9Jic2DbsAS';
 
-
+//SIMPLESIGNIN MISSION
 const url1 = 'https://h5.ele.me/restapi/biz.svip_scene/svip/engine/xSupply?params[]=%7B%22tagCode%22:%22223166%22,%22extra%22:%7B%22missionDefId%22:1390001,%22missionCollectionId%22:36,%22missionType%22:%22SIMPLESIGNIN%22%7D%7D';
 const url2 = 'https://h5.ele.me/restapi/biz.svip_scene/svip/engine/xSupply?params[]=%7B%22tagCode%22:%22223166%22,%22extra%22:%7B%22missionDefId%22:1056001,%22missionCollectionId%22:36,%22missionType%22:%22SIMPLESIGNIN%22%7D%7D';
 const url3 = 'https://h5.ele.me/restapi/biz.svip_scene/svip/engine/xSupply?params[]=%7B%22tagCode%22:%22223166%22,%22extra%22:%7B%22missionDefId%22:1966001,%22missionCollectionId%22:36,%22missionType%22:%22SIMPLESIGNIN%22%7D%7D';
@@ -30,9 +26,8 @@ const url9 = 'https://h5.ele.me/restapi/biz.svip_scene/svip/engine/xSupply?param
 const url10 = 'https://h5.ele.me/restapi/biz.svip_scene/svip/engine/xSupply?params[]=%7B%22tagCode%22:%22223166%22,%22extra%22:%7B%22missionDefId%22:2590001,%22missionCollectionId%22:36,%22missionType%22:%22SIMPLESIGNIN%22%7D%7D';
 const url11 = 'https://h5.ele.me/restapi/biz.svip_scene/svip/engine/xSupply?params[]=%7B%22tagCode%22:%22223166%22,%22extra%22:%7B%22missionDefId%22:978001,%22missionCollectionId%22:36,%22missionType%22:%22SIMPLESIGNIN%22%7D%7D';
 
-//const url21 = 'https://h5.ele.me/restapi/biz.svip_scene/svip/engine/xSupply?params[]=%7B%22tagCode%22:%22223166%22,%22extra%22:%7B%22missionDefId%22:2210003,%22missionCollectionId%22:36,%22missionType%22:%22PAGEVIEW%22%7D%7D';
+//PAGEVIEW MISSION
 const url21 = 'https://h5.ele.me/restapi/biz.svip_scene/svip/engine/xSupply?params[]=%7B%22tagCode%22:%22223166%22,%22extra%22:%7B%22missionDefId%22:2210003,%22missionCollectionId%22:36,%22missionType%22:%22PAGEVIEW%22%7D%7D';
-
 const url22 = 'https://h5.ele.me/restapi/biz.svip_scene/svip/engine/xSupply?params[]=%7B%22tagCode%22:%22223166%22,%22extra%22:%7B%22missionDefId%22:228003,%22missionCollectionId%22:36,%22missionType%22:%22PAGEVIEW%22%7D%7D';
 const url23 = 'https://h5.ele.me/restapi/biz.svip_scene/svip/engine/xSupply?params[]=%7B%22tagCode%22:%22223166%22,%22extra%22:%7B%22missionDefId%22:2020001,%22missionCollectionId%22:36,%22missionType%22:%22PAGEVIEW%22%7D%7D';
 const url24 = 'https://h5.ele.me/restapi/biz.svip_scene/svip/engine/xSupply?params[]=%7B%22tagCode%22:%22223166%22,%22extra%22:%7B%22missionDefId%22:342001,%22missionCollectionId%22:36,%22missionType%22:%22PAGEVIEW%22%7D%7D';
@@ -54,8 +49,8 @@ const url32 = 'https://h5.ele.me/restapi/biz.svip_scene/svip/engine/xSupply?para
 
         elemhdArr.push($.getdata('elemhd'));
         elemhd = elemhdArr[0];
-        cookie = JSON.parse(elemhd);
-        cookieVal = cookie.Cookie
+        elemheaders = JSON.parse(elemhd);
+        cookieVal = elemheaders.Cookie
         console.log(cookieVal);
 
 
@@ -75,16 +70,16 @@ const url32 = 'https://h5.ele.me/restapi/biz.svip_scene/svip/engine/xSupply?para
     await elem_mission_10()  //逛一逛高德十一活动
     await elem_mission_11()  //看看时下最热好货
 
-
+    /*
 
     console.log(`-------现在开始PAGE_VIEW任务-------\n`);
     let waitDuration = 16;
 
     console.log(`任务:<开学季>美味全攻略正在执行,等待${waitDuration}秒` + `\n`);
-    await elem_mission_21(16000)  //
+    await elem_mission_21()  //
     await $.wait(waitDuration * 1000)//1000=1秒
 
-    /*
+    
     console.log(`PAGE_VIEW任务正在执行,等待${waitDuration}秒`+ `\n`);
     await elem_mission_22()  //
     await $.wait(waitDuration * 1000)//1000=1秒
@@ -167,7 +162,7 @@ function elembalancejs(timeout = 0) {
             try {
                 data = JSON.parse(data);
                 console.log(`------------- 统计-------------\n`);
-                console.log('吃货豆数量：' + data.accountInfos[0].count)
+                console.log('目前拥有巨额财富【' + data.accountInfos[0].count + '】颗吃货豆')
             } catch (e) {
                 //$.logErr(e, resp);
             } finally {
@@ -318,7 +313,7 @@ function elem_mission_5(timeout = 0) {
 
 
 
-//----【】----
+//----【17会员日】----
 function elem_mission_6(timeout = 0) {
     return new Promise((resolve) => {
         let url = {
